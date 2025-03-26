@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea de pagina web con CSS</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    /*BARRA DE NAVEGACION*/
+    nav{
+        background-color: #715d28;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+    }
+    .titulo_nav{
+        padding: 15px;
+        padding-left: 30px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    nav ul{
+        list-style: none;
+        text-align: right;
+        font-size: 20px;
+        margin-top: 18px;  
+        margin-right: 35px;      
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav ul li:hover{
+        cursor: pointer;
+        color: #3a85db;
+    }
+    .montaña{
+        display: inline-block;
+        margin-left: 80px;
+        margin-top: 10px;
+        width: 27%;
+        height: auto;
+        font-size: 20px;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+    .montaña img{
+        width: 55%;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+        
+    }
+    .montaña h1{
+        text-align: left;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .montaña p{
+        margin: 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .montaña:hover{
+        transform: scale(1.1);
+    }
+    /*bosques*/
+    .bosque{
+        display: inline-block;
+        margin-left: 80px;
+        margin-top: 10px;
+        width: 27%;
+        height: auto;
+        font-size: 20px;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+    .bosque img{
+        width: 55%;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    .bosque h1{
+        text-align: left;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .bosque p{
+        margin: 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .bosque:hover{
+        transform: scale(1.1);
+    }
+    /*costas*/ 
+    .costas{
+        display: inline-block;
+        margin-left: 80px;
+        width: 27%;
+        height: auto;
+        font-size: 20px;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+    .costas img{
+        width: 55%;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    .costas h1{
+        text-align: left;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .costas p{
+        margin: 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .costas:hover{
+        transform: scale(1.1);
+    }
+    /*tabla*/
+    table{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;   
+        border-collapse: collapse;
+        border-left: 2px solid royalblue; 
+        border-right: 2px solid royalblue;
+        border-top: 2px solid royalblue;
+        margin-bottom: 100px;
+    }
+    table tr td{
+        border-bottom: 2px solid royalblue;
+        padding: 20px;
+    }
+    tr:nth-child(1){
+        background-color: goldenrod;
+        color: white;
+        font-weight: bold;
+    }
+    tr:hover{
+        background-color: peru;
+    }
+    </style>
+</head>
+<body>
+    <nav><p class="titulo_nav">Viajes y Naturaleza</p>
+        <ul>
+            <li>Inicio</li>
+            <li>Galeria</li>
+            <li>Destinos</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <div class="montaña"><img src="https://concepto.de/wp-content/uploads/2018/08/monta%C3%B1a-vegetacion-min-e1533763005248.jpg" alt="Montaña">
+        <h1>Paisajes de montaña</h1>
+        <p>Las montañas son una de las maravillas de la naturaleza.Y son muy altas y majestuosas</p>
+    </div>
+    <div class="bosque"><img src="https://www.churchofjesuschrist.org/imgs/cawwrt1xujnuom1dxzs1h9kcmtoqcsmqh1r2i6ol/pct:0,6.4,100,87.2/!1600%2C900/0/default" alt="Bosque">
+        <h1>Bosques Misteriosos</h1>
+        <p>Los bosques son el hogar de muchas especies de animales y plantas.</p>
+    </div>
+    <div class="costas"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyiL6ZN9aIZW2Mclb-iCoKRIQaJCNUk7O_g&s" alt="Costas">
+        ;<h1>Costas Paradisiacas</h1>
+        <p>Las costas son lugares de gran belleza y diversidad. Atraen turismo nacional e internacional.</p>
+    </div>
+    <table>
+        <tr>
+            <td>Destino</td>
+            <td>País</td>
+            <td>Dificultad</td>
+            <td>Temporada Recomendada</td>
+        </tr>
+        <tr>
+            <td>Machu Picchu</td>
+            <td>Perú</td>
+            <td>Alta</td>
+            <td>Mayo-Septiembre</td>
+        </tr>
+        <tr>
+            <td>Cataratas del niagara</td>
+            <td>Canadá</td>
+            <td>Media</td>
+            <td>Julio-agosto</td>
+        </tr>
+        <tr>
+            <td>Islas Galapagos</td>
+            <td>Ecuador</td>
+            <td>Baja</td>
+            <td>Todo el año</td>
+        </tr>
+        <tr>
+            <td>Torres del Paine</td>
+            <td>Chile</td>
+            <td>Alta</td>
+            <td>Noviembre-Marzo</td>
+
+        </tr>
+    </table>
+</body>
+</html>
